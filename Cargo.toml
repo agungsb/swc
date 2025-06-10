@@ -164,3 +164,14 @@ opt-level = 3
 
 [profile.test.package.swc_ecma_usage_analyzer]
 opt-level = 3
+
+[patch.crates-io]
+# Point all wasmer-* crates to your local clone
+wasmer = { path = "../wasmer/lib/api" }
+wasmer-compiler = { path = "../wasmer/lib/compiler" }
+wasmer-compiler-cli = { path = "../wasmer/lib/cli-compiler" }
+#wasmer-engine = { path = "../wasmer/lib/engine" }
+#wasmer-engine-jit = { path = "../wasmer/lib/engine-jit" }
+wasmer-types = { path = "../wasmer/lib/types" }
+wasmer-vm = { path = "../wasmer/lib/vm" }
+corosensei = { path = "../corosensei" }

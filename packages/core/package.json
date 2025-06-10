@@ -37,7 +37,8 @@
             "aarch64-apple-darwin",
             "aarch64-unknown-linux-gnu",
             "aarch64-unknown-linux-musl",
-            "aarch64-pc-windows-msvc"
+            "aarch64-pc-windows-msvc",
+	    "s390x-unknown-linux-gnu"
         ]
     },
     "publishConfig": {
@@ -91,7 +92,7 @@
     ],
     "dependencies": {
         "@swc/counter": "^0.1.3",
-        "@swc/types": "workspace:^"
+        "@swc/types": "file:../types"
     },
     "devDependencies": {
         "@napi-rs/cli": "^3.0.0-alpha.43",
